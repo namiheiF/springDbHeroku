@@ -15,7 +15,6 @@ import com.nami.hamakko.mybatis.domain.MUserInfoExample;
 import com.nami.hamakko.mybatis.mapper.MUserInfoMapper;
 
 @Controller
-//Mapperクラスが格納されているパスを明記する必要がある
 @MapperScan("com.nami.hamakko.mybatis.mapper")
 public class ChusenController {
 

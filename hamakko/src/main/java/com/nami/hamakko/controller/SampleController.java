@@ -12,7 +12,6 @@ import com.nami.hamakko.mybatis.domain.MUserInfo;
 import com.nami.hamakko.mybatis.mapper.MUserInfoMapper;
 
 @Controller
-//Mapperクラスが格納されているパスを明記する必要がある
 @MapperScan("com.nami.hamakko.mybatis.mapper")
 public class SampleController {
 
@@ -21,8 +20,8 @@ public class SampleController {
 	
 	@RequestMapping("/index")
     public String index(Model model) {
-		MUserInfo s = mui.selectByPrimaryKey("0001");    // 検索結果をSongsオブジェクトに格納
-        model.addAttribute("title", s.getPassword());  // getterで値を取り出す
+		MUserInfo s = mui.selectByPrimaryKey("0001");
+        model.addAttribute("title", s.getPassword());
         forwordYoyakuPage();
         return "index";
     }
