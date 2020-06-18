@@ -44,6 +44,18 @@ public class SampleController {
 		WebDriver driver = new ChromeDriver(driverService, options);
 //		driver.get(YoyakuConstans.YOYAKU_URL);
 		driver.get("https://google.co.jp");
+		
+		sleep(2000);
+		
 		return driver;
 	}
+	
+	private void sleep(int microtime){
+		try{
+			Thread.sleep(microtime);
+		}catch(InterruptedException e){
+			e.printStackTrace();
+		}
+	}
+	
 }
