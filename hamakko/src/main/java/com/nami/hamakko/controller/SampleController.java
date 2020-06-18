@@ -24,7 +24,6 @@ public class SampleController {
     public String index(Model model) {
 		MUserInfo s = mui.selectByPrimaryKey("0001");
         model.addAttribute("title", s.getPassword());
-        forwordYoyakuPage();
         return "index";
     }
 	
