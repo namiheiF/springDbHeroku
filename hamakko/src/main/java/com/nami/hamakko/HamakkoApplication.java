@@ -8,7 +8,7 @@ public class HamakkoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(HamakkoApplication.class, args);
-		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 	}
 
 }
