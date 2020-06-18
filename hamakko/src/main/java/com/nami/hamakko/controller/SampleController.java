@@ -30,7 +30,7 @@ public class SampleController {
 	@RequestMapping("/selenum")
 	public String selenum(Model model) {
 		forwordYoyakuPage();
-		return "";
+		return "selenum";
 	}
 
 	public WebDriver forwordYoyakuPage(){
